@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Stopwatch</title>
+  <b><title>Stopwatch</title></b>
   <style>
     body {
-     
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: none;
-     
-
+      background: url('stop.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
     #stopwatch {
       font-size: 48px;
       font-weight: bold;
       margin: 20px;
-      
-     
     }
     #lap-times {
       margin: 20px;
@@ -27,45 +28,46 @@
     button {
       padding: 10px 20px;
       font-size: 18px;
-      border: black;
+      border: none;
       border-radius: 5px;
       cursor: pointer;
       background-color: rgb(255, 221, 0); 
-     
+      margin: 5px;
     }
-    .but1{
+    .but1 {
       background-color: rgb(81, 255, 0);
     }
-    .but2{
+    .but2 {
       background-color: red;
     }
-    .but3{
+    .but3 {
       background-color: rgb(0, 255, 221);
     }
-    .but4{
+    .but4 {
       background-color: violet;
     }
     button:hover {
       background-color: #c55810d4;
     }
-    .box{
-        border: 20px;
-        margin: 50PX;
-        border-color: blue;
-        border-width: 8px;
-        
+    .box {
+      border: 2px solid blue;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+      background-color: #c3b822;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="box">
-  <h1> Stopwatch</h1>
-  <div id="stopwatch">00:00:00</div>
-  <button  class=" but1" id="start-btn">Start</button>
-  <button  class="but2" id="pause-btn" disabled>Pause</button>
-  <button class="but3"  class="but2" id="reset-btn">Reset</button>
-  <button  class="but4" id="lap-btn">Lap</button>
-  <div id="lap-times"></div>
+    <b><h1>STOPWATCH</h1></b>
+    <div id="stopwatch">00:00:00</div>
+    <button class="but1" id="start-btn">Start</button>
+    <button class="but2" id="pause-btn" disabled>Pause</button>
+    <button class="but3" id="reset-btn">Reset</button>
+    <button class="but4" id="lap-btn">Lap</button>
+    <div id="lap-times"></div>
   </div>
 
   <script>
